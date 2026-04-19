@@ -1,0 +1,67 @@
+.problem-section {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.problem-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.problem-card {
+  background: rgba(10, 74, 74, 0.3);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 217, 192, 0.1);
+  transition: transform 0.3s, border-color 0.3s;
+  height: 100%;
+}
+
+.problem-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--primary-color);
+}
+
+.problem-icon-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  height: 60px;
+}
+
+.problem-flag {
+  position: absolute;
+  font-size: 2rem;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+.problem-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.problem-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.danger-alert {
+  background: rgba(255, 87, 87, 0.1);
+  border: 2px solid rgba(255, 87, 87, 0.3);
+  padding: 2rem;
+  border-radius: 16px;
+  text-align: left;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.danger-alert h3 {
+  color: #FF5757;
+  margin-bottom: 1rem;
+}

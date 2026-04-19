@@ -1,0 +1,184 @@
+.card-carousel {
+  position: relative;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.carousel-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.carousel-track {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-card {
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background: rgba(10, 74, 74, 0.4);
+  border: 1px solid rgba(0, 217, 192, 0.3);
+  border-radius: 20px;
+  padding: 2rem;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+  backdrop-filter: blur(10px);
+}
+
+.carousel-card.active {
+  transform: translateX(0) scale(1);
+  opacity: 1;
+  z-index: 3;
+  box-shadow: 0 20px 60px rgba(0, 217, 192, 0.3);
+  border-color: var(--primary-color);
+}
+
+.carousel-card.prev {
+  transform: translateX(-120%) scale(0.85);
+  opacity: 0.5;
+  z-index: 2;
+  filter: blur(2px);
+}
+
+.carousel-card.next {
+  transform: translateX(120%) scale(0.85);
+  opacity: 0.5;
+  z-index: 2;
+  filter: blur(2px);
+}
+
+.carousel-card:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 10px 40px rgba(0, 217, 192, 0.4);
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+}
+
+.card-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.card-content h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: var(--text-gray);
+  line-height: 1.6;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 217, 192, 0.2);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 4;
+  transition: all 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(10px);
+}
+
+.carousel-btn:hover {
+  background: var(--primary-color);
+  color: var(--bg-dark);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-btn.prev {
+  left: 0;
+}
+
+.carousel-btn.next {
+  right: 0;
+}
+
+.carousel-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: rgba(0, 217, 192, 0.3);
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.indicator.active {
+  background: var(--primary-color);
+  width: 30px;
+  border-radius: 6px;
+}
+
+.indicator:hover {
+  background: var(--primary-color);
+  transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .carousel-card {
+    width: 280px;
+    height: 320px;
+  }
+
+  .carousel-card.prev,
+  .carousel-card.next {
+    transform: translateX(0) scale(0.7);
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .carousel-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+  }
+
+  .card-icon {
+    font-size: 3rem;
+  }
+
+  .card-content h3 {
+    font-size: 1.5rem;
+  }
+}

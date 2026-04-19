@@ -1,0 +1,107 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║           CARA MANUAL - IKUTI LANGKAH INI                     ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+LANGKAH 1: BUKA CMD
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Tekan tombol Windows + R
+2. Ketik: cmd
+3. Tekan Enter
+
+Jendela hitam akan muncul (Command Prompt)
+
+
+LANGKAH 2: MASUK KE FOLDER PROJECT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Copy command ini dan paste di CMD (klik kanan → Paste):
+
+cd /d "D:\coding\SUI workshop\blixa-react"
+
+Tekan Enter.
+
+
+LANGKAH 3: CEK NODE.JS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ketik command ini:
+
+node --version
+
+Tekan Enter.
+
+Jika muncul versi (contoh: v18.0.0 atau v20.0.0):
+   ✅ Lanjut ke Langkah 4
+
+Jika muncul error "node is not recognized":
+   ❌ Install Node.js dulu dari: https://nodejs.org
+   Lalu restart CMD dan mulai dari Langkah 1
+
+
+LANGKAH 4: CEK NPM
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ketik command ini:
+
+npm --version
+
+Tekan Enter.
+
+Jika muncul versi (contoh: 9.0.0 atau 10.0.0):
+   ✅ Lanjut ke Langkah 5
+
+Jika muncul error:
+   ❌ Reinstall Node.js
+
+
+LANGKAH 5: BUILD PROJECT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ketik command ini:
+
+npm run build
+
+Tekan Enter.
+
+Tunggu 1-3 menit...
+
+JIKA BERHASIL:
+   ✅ Akan muncul folder "build"
+   ✅ Lanjut ke Langkah 6
+
+JIKA ERROR:
+   ❌ COPY SEMUA TEXT ERROR YANG MUNCUL
+   ❌ Kirim ke saya error messagenya
+   ❌ JANGAN TUTUP CMD!
+
+
+LANGKAH 6: DEPLOY KE VERCEL
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Ketik command ini:
+
+vercel --prod
+
+Tekan Enter.
+
+Tunggu 2-3 menit...
+
+Jika berhasil, akan muncul URL seperti:
+https://blixa-landing-xxx.vercel.app
+
+✅ SELESAI! Website Anda sudah live!
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️  PENTING:
+
+- JANGAN tutup CMD sampai selesai semua langkah
+- Jika ada error di Langkah 5, COPY error messagenya
+- Kirim error message lengkap ke saya
+- Saya akan bantu troubleshoot
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━

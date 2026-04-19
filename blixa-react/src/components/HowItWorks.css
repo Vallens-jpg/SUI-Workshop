@@ -1,0 +1,116 @@
+.how-section {
+  text-align: center;
+}
+
+.steps-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 4rem;
+  flex-wrap: wrap;
+}
+
+.step-card {
+  background: rgba(10, 74, 74, 0.3);
+  padding: 2rem;
+  border-radius: 16px;
+  border: 2px solid var(--primary-color);
+  flex: 1;
+  min-width: 250px;
+  max-width: 300px;
+  transition: all 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 217, 192, 0.3);
+}
+
+.step-icon {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.step-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.step-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.step-arrow {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.blockchain-info {
+  background: rgba(0, 217, 192, 0.05);
+  padding: 3rem;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 217, 192, 0.2);
+  text-align: left;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.blockchain-info h3 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+.blockchain-features {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.blockchain-item {
+  padding: 1.5rem;
+  background: rgba(10, 74, 74, 0.3);
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-color);
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  transition: all 0.3s ease;
+}
+
+.blockchain-item:hover {
+  transform: translateX(10px);
+  background: rgba(10, 74, 74, 0.5);
+}
+
+.blockchain-icon {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+}
+
+.blockchain-content {
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .steps-container {
+    flex-direction: column;
+  }
+  
+  .step-arrow {
+    transform: rotate(90deg);
+  }
+
+  .blockchain-item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

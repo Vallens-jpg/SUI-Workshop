@@ -1,0 +1,53 @@
+========================================
+SOLUSI CEPAT - BUILD ERROR DI VERCEL
+========================================
+
+MASALAH:
+Error: Command "npm run build" exited with 1
+
+PENYEBAB:
+PowerShell memblokir npm commands karena execution policy di Windows.
+
+SOLUSI TERCEPAT:
+========================================
+
+CARA 1: GUNAKAN BATCH FILE (PALING MUDAH)
+------------------------------------------
+1. Double-click file: test-build.bat
+2. Tunggu sampai selesai
+3. Jika berhasil, double-click: build-and-deploy.bat
+4. SELESAI!
+
+CARA 2: GUNAKAN COMMAND PROMPT (CMD)
+-------------------------------------
+1. Tekan Win + R
+2. Ketik: cmd
+3. Enter
+4. Copy-paste command ini:
+
+cd /d "D:\coding\SUI workshop\blixa-react"
+
+5. Enter, lalu jalankan:
+
+npm run build
+
+6. Jika berhasil, jalankan:
+
+vercel --prod
+
+7. SELESAI!
+
+========================================
+
+CATATAN PENTING:
+- JANGAN gunakan PowerShell!
+- HARUS gunakan CMD atau batch file
+- Project sudah linked ke Vercel: blixa-landing
+- Vercel CLI sudah terinstall dan login
+
+========================================
+
+JIKA MASIH ERROR:
+Beritahu saya error message lengkapnya.
+
+========================================

@@ -1,0 +1,140 @@
+/* Tilt Card */
+.tilt-card {
+  transition: transform 0.1s ease-out;
+  transform-style: preserve-3d;
+  will-change: transform;
+}
+
+/* Flip Card */
+.flip-card {
+  perspective: 1000px;
+  cursor: pointer;
+  height: 100%;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 16px;
+  padding: 2rem;
+  background: rgba(10, 74, 74, 0.4);
+  border: 1px solid rgba(0, 217, 192, 0.3);
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background: rgba(0, 217, 192, 0.1);
+  border-color: var(--primary-color);
+}
+
+/* Hover Lift Card */
+.hover-lift-card {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+}
+
+.hover-lift-card:hover {
+  transform: translateY(-15px);
+  box-shadow: 0 20px 40px rgba(0, 217, 192, 0.3);
+}
+
+/* Glow Card */
+.glow-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.glow-effect {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(
+    circle,
+    rgba(0, 217, 192, 0.4) 0%,
+    transparent 70%
+  );
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+.glow-card:hover .glow-effect {
+  opacity: 1;
+}
+
+.glow-card-content {
+  position: relative;
+  z-index: 1;
+}
+
+/* Expand Card */
+.expand-card {
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.expand-card.expanded {
+  transform: scale(1.05);
+  z-index: 10;
+  box-shadow: 0 25px 50px rgba(0, 217, 192, 0.4);
+}
+
+/* Parallax Card */
+.parallax-card {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.parallax-content {
+  transition: transform 0.1s ease-out;
+  will-change: transform;
+}
+
+/* Common Card Styles */
+.tilt-card,
+.hover-lift-card,
+.glow-card,
+.expand-card,
+.parallax-card {
+  background: rgba(10, 74, 74, 0.4);
+  border: 1px solid rgba(0, 217, 192, 0.3);
+  border-radius: 16px;
+  padding: 2rem;
+  backdrop-filter: blur(10px);
+}
+
+.tilt-card:hover,
+.glow-card:hover,
+.parallax-card:hover {
+  border-color: var(--primary-color);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .tilt-card,
+  .parallax-card {
+    transform: none !important;
+  }
+
+  .parallax-content {
+    transform: none !important;
+  }
+}

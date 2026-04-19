@@ -1,0 +1,66 @@
+.animated-beams {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.beam {
+  position: absolute;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    rgba(0, 217, 192, 0.4) 50%,
+    transparent 100%
+  );
+  animation: beamMove 8s linear infinite;
+  opacity: 0;
+}
+
+.beam-1 {
+  left: 10%;
+  animation-delay: 0s;
+}
+
+.beam-2 {
+  left: 30%;
+  animation-delay: 1.6s;
+}
+
+.beam-3 {
+  left: 50%;
+  animation-delay: 3.2s;
+}
+
+.beam-4 {
+  left: 70%;
+  animation-delay: 4.8s;
+}
+
+.beam-5 {
+  left: 90%;
+  animation-delay: 6.4s;
+}
+
+@keyframes beamMove {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+}

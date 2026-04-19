@@ -1,0 +1,90 @@
+.pricing-section {
+  text-align: center;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.pricing-card {
+  background: rgba(10, 74, 74, 0.3);
+  padding: 2.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(0, 217, 192, 0.2);
+  position: relative;
+  transition: all 0.3s;
+}
+
+.pricing-card:hover {
+  transform: translateY(-10px);
+  border-color: var(--primary-color);
+}
+
+.pricing-card.featured {
+  border: 2px solid var(--primary-color);
+  background: rgba(0, 217, 192, 0.1);
+}
+
+.popular-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--gradient-2);
+  color: var(--darker-bg);
+  padding: 0.5rem 1.5rem;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.pricing-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.price {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--primary-color);
+  margin-bottom: 2rem;
+}
+
+.price span {
+  font-size: 1.2rem;
+  color: var(--text-gray);
+}
+
+.pricing-card ul {
+  list-style: none;
+  margin-bottom: 2rem;
+  text-align: left;
+}
+
+.pricing-card li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+}
+
+.pricing-card li:before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+}
+
+.pricing-card button {
+  width: 100%;
+}
+
+.transaction-fee {
+  background: rgba(0, 217, 192, 0.05);
+  padding: 1.5rem;
+  border-radius: 12px;
+  max-width: 800px;
+  margin: 0 auto;
+}

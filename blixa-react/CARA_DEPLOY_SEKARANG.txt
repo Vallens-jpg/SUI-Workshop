@@ -1,0 +1,95 @@
+╔════════════════════════════════════════════════════════════╗
+║                                                            ║
+║   CARA DEPLOY BLIXA REACT KE VERCEL - SOLUSI CEPAT        ║
+║                                                            ║
+╚════════════════════════════════════════════════════════════╝
+
+🚨 MASALAH ANDA:
+   Error: Command "npm run build" exited with 1
+   
+   Ini karena PowerShell memblokir npm di Windows.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ SOLUSI PALING MUDAH:
+
+   1. Cari file: test-build.bat
+   2. Double-click file tersebut
+   3. Tunggu sampai muncul "Build successful!"
+   4. Cari file: build-and-deploy.bat  
+   5. Double-click file tersebut
+   6. Tunggu sampai muncul URL website Anda
+   7. SELESAI! ✨
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 SOLUSI MANUAL (Jika batch file tidak jalan):
+
+   1. Tekan tombol Windows + R
+   2. Ketik: cmd
+   3. Tekan Enter
+   4. Copy command ini dan paste di CMD:
+   
+      cd /d "D:\coding\SUI workshop\blixa-react"
+   
+   5. Tekan Enter
+   6. Ketik command ini:
+   
+      npm run build
+   
+   7. Tunggu sampai selesai (1-2 menit)
+   8. Jika berhasil, ketik command ini:
+   
+      vercel --prod
+   
+   9. Tunggu sampai muncul URL (2-3 menit)
+   10. SELESAI! ✨
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️ PENTING:
+   - JANGAN gunakan PowerShell (warna biru)
+   - HARUS gunakan Command Prompt / CMD (warna hitam)
+   - Atau gunakan batch file (.bat)
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📁 FILE YANG SUDAH DIBUAT:
+
+   ✓ test-build.bat          → Test build dulu
+   ✓ build-and-deploy.bat    → Build + Deploy sekaligus
+   ✓ vercel.json             → Konfigurasi Vercel
+   
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 STATUS SAAT INI:
+
+   ✅ Vercel CLI sudah terinstall
+   ✅ Sudah login ke Vercel
+   ✅ Project sudah linked: blixa-landing
+   ✅ Konfigurasi sudah benar
+   ❌ Build gagal karena PowerShell policy
+   
+   SOLUSI: Gunakan CMD atau batch file!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+💡 TIPS:
+
+   Setelah deploy berhasil, Anda akan dapat URL seperti:
+   https://blixa-landing-xxx.vercel.app
+   
+   Website langsung bisa diakses dari mana saja!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+❓ MASIH ERROR?
+
+   Beritahu saya:
+   1. Error message lengkapnya
+   2. Screenshot jika perlu
+   3. Saya akan bantu troubleshoot
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Good luck! 🚀

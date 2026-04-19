@@ -1,0 +1,73 @@
+╔═══════════════════════════════════════════════════════════════╗
+║                                                               ║
+║           BLIXA REACT - CARA MENJALANKAN PROJECT              ║
+║                                                               ║
+╚═══════════════════════════════════════════════════════════════╝
+
+MASALAH POWERSHELL? GUNAKAN SALAH SATU CARA INI:
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ CARA 1: DOUBLE-CLICK FILE BAT (PALING MUDAH!)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Double-click file: RUN_HERE.bat
+2. Tunggu sampai selesai
+3. Browser akan otomatis buka di http://localhost:3000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ CARA 2: GUNAKAN COMMAND PROMPT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Tekan Win + R
+2. Ketik: cmd
+3. Enter
+4. Ketik: cd "C:\Users\MyBook Hype AMD\Documents\Documentation\SUI workshop\blixa-react"
+5. Ketik: npm install (jika belum install)
+6. Ketik: npm start
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✅ CARA 3: FIX POWERSHELL (UNTUK YANG MAU PAKAI POWERSHELL)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+1. Klik kanan Start Menu
+2. Pilih "Windows PowerShell (Admin)" atau "Terminal (Admin)"
+3. Ketik: Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+4. Ketik: Y
+5. Enter
+6. Tutup PowerShell Admin
+7. Buka PowerShell biasa dan jalankan: npm start
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 CATATAN PENTING:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- npm install hanya perlu dijalankan SEKALI
+- Proses install memakan waktu 2-5 menit (normal!)
+- Deprecation warnings adalah NORMAL, abaikan saja
+- Setelah install selesai, gunakan npm start untuk menjalankan
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🎯 SETELAH BERHASIL START:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- Browser akan otomatis buka
+- Atau buka manual: http://localhost:3000
+- Untuk stop server: tekan Ctrl + C
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 DOKUMENTASI LENGKAP:
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+- CARA_MENJALANKAN.md  → Panduan lengkap
+- QUICK_START.md       → Quick reference
+- README.md            → Dokumentasi project
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+✨ SELAMAT MENCOBA! ✨
