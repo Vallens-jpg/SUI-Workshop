@@ -35,7 +35,7 @@ sui-workshop/
 ```
 ## 🛠️ Cara Menjalankan
 **Prasyarat**
-Pastikan Anda telah menginstal Sui Binaries(https://docs.sui.io/getting-started/onboarding/sui-install).
+Pastikan Anda telah menginstal Sui Binaries (https://docs.sui.io/getting-started/onboarding/sui-install).
 
 **Kompilasi Kontrak**
 Masuk ke salah satu folder kontrak (misal: coin_contract) dan jalankan:
@@ -52,4 +52,4 @@ Proyek ini dilisensikan di bawah MIT License.
 
 
 _Dikembangkan oleh Vallens-jpg sebagai bagian dari eksplorasi Web3._
-```
+
